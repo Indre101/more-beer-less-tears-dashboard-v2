@@ -1,0 +1,53 @@
+// --------------------------------------------
+// This file contains main section styles
+// --------------------------------------------
+.wrapper {
+  margin: var(--margin);
+  padding: var(--padding);
+  box-shadow: var(--box-shadow-neo2);
+  border-radius: var(--border-radius);
+  width: 96.5%;
+  height: auto;
+  background-color: var(--color-2-normal);
+}
+
+.wrapperCustomer {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-top: var(--margin);
+  padding: var(--padding);
+  border-color: var(--color-6-normal);
+  border-style: solid;
+  box-shadow: var(--box-shadow-neo2);
+
+  /*margin-top: var(--margin);
+  padding: var(--padding);
+  box-shadow: var(--box-shadow-neo2);
+  border-radius: var(--border-radius);
+  */
+}
+
+.wrapperInside {
+  width: 100%;
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+
+  margin-top: var(--margin);
+  padding: var(--padding);
+  box-shadow: var(--box-shadow-neo2);
+  border-radius: var(--border-radius);
+}
+
+.Logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: var(--margin);
+  margin-bottom: var(--margin-large);
+}
+
+.annoucmentDeal {
+  text-transform: uppercase;
+  margin-top: 30px;
+  color: var(--color-6-normal);
+}

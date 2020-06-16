@@ -1,0 +1,110 @@
+.container2 {
+  margin: 50px 0px 50px 0px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(auto, 33%));
+  gap: 20%;
+}
+
+.border1 {
+  border-radius: 15px;
+  height: 50px;
+}
+
+.border2 {
+  border-radius: 15px;
+  height: 50px;
+}
+
+.myTable {
+  width: 100%;
+  height: auto;
+}
+
+.waitingListItem,
+.queue,
+.serving {
+  text-align: center;
+  position: relative;
+  color: lightyellow;
+  font-size: 1.3em;
+  font-weight: bold;
+  animation-duration: 1s;
+  animation-name: scale-in-center;
+  text-align: center;
+}
+
+.queue {
+  color: var(--color-6-normal);
+}
+
+.serving {
+  color: var(--color-4-normal);
+}
+
+.queueNumbers,
+.popMessage {
+  width: auto;
+  height: 90px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: auto;
+
+  .cheersImg {
+    width: auto;
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.readyHeadline {
+  margin-top: 30px;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes color {
+  from {
+    color: #504ecc;
+  }
+  to {
+    color: red;
+  }
+}
