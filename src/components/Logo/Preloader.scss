@@ -15,6 +15,11 @@
   }
 }
 
+.logo {
+  svg {
+    filter: none;
+  }
+}
 .preloaderContainer {
   background-color: #4f4dcb;
   width: 100%;
