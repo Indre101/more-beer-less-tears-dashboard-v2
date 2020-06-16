@@ -1,23 +1,13 @@
 // Logo Animation Lottie
 import React, { useState } from "react";
-import Lottie from "react-lottie";
 import animationData from "../../assets/lottifiles/data08.json";
-
+import lottie from "lottie-web";
 export default React.memo(function Logoanimation() {
   const [isStopped, setisStopped] = useState(false);
 
-  const defaultOptions = {
-    loop: false,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <div>
-      <div className="wrapper">
+      {/* <div className="wrapper">
         <Lottie
           options={defaultOptions}
           height={250}
@@ -35,7 +25,7 @@ export default React.memo(function Logoanimation() {
             },
           ]}
         />
-      </div>
+      </div> */}
     </div>
   );
 });

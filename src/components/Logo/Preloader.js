@@ -1,27 +1,34 @@
-// Logo Animation Lottie
-import React, { useRef } from "react";
-import Lottie from "react-lottie";
+import React, { useRef, useEffect } from "react";
 import animationData from "../../assets/lottifiles/data08.json";
+import lottie from "lottie-web";
 import "./Preloader.scss";
 
-export default React.memo(function Preloader() {
-  const defaultOptions = {
-    loop: false,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-      className: "lottie-anim-element",
-    },
-  };
+export default React.memo(function Preloader(props) {
+  useEffect(() => {
+    const animation = lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: false,
+      animationData: animationData,
+      rendererSettings: {
+        id: "lottie-anim-element",
+      },
+    });
+    animation.play();
+  }, []);
 
   const container = useRef();
+  const preloaderContainer = useRef();
   return (
-    <div
-      className="preloader"
-      ref={container}
-      onAnimationEnd={() => (container.current.style.display = "none")}>
-      <Lottie options={defaultOptions} height={350} width={350} />
+    <div className="preloaderContainer" ref={preloaderContainer}>
+      <div
+        id="preloader"
+        className="preloader"
+        ref={container}
+        onAnimationEnd={() => {
+          preloaderContainer.current.style.display = "none";
+        }}></div>
     </div>
   );
 });

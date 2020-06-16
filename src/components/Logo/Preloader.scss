@@ -1,17 +1,28 @@
 .preloader {
-  position: fixed;
-  top: 0;
-  z-index: 120;
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: dissapear 1s 5.3s linear forwards 1;
+  svg {
+    filter: none;
+  }
+}
+@keyframes dissapear {
+  100% {
+    opacity: 0;
+  }
+}
+
+.preloaderContainer {
   background-color: #4f4dcb;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: dissapear 1s 5.3s linear forwards 1;
-}
-@keyframes dissapear {
-  100% {
-    opacity: 0;
-  }
+  position: fixed;
+  top: 0;
+  z-index: 120;
 }
