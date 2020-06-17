@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/more-beer-less-tears-dashboard-v2/static/css/main.1902e05a.chunk.css",
+    "main.js": "/more-beer-less-tears-dashboard-v2/static/js/main.3c4b633f.chunk.js",
+    "main.js.map": "/more-beer-less-tears-dashboard-v2/static/js/main.3c4b633f.chunk.js.map",
+    "runtime-main.js": "/more-beer-less-tears-dashboard-v2/static/js/runtime-main.02b0f6e6.js",
+    "runtime-main.js.map": "/more-beer-less-tears-dashboard-v2/static/js/runtime-main.02b0f6e6.js.map",
+    "static/js/2.ff5d23fd.chunk.js": "/more-beer-less-tears-dashboard-v2/static/js/2.ff5d23fd.chunk.js",
+    "static/js/2.ff5d23fd.chunk.js.map": "/more-beer-less-tears-dashboard-v2/static/js/2.ff5d23fd.chunk.js.map",
+    "index.html": "/more-beer-less-tears-dashboard-v2/index.html",
+    "precache-manifest.2cdfa759dadeac155067a282324aca8b.js": "/more-beer-less-tears-dashboard-v2/precache-manifest.2cdfa759dadeac155067a282324aca8b.js",
+    "service-worker.js": "/more-beer-less-tears-dashboard-v2/service-worker.js",
+    "static/css/main.1902e05a.chunk.css.map": "/more-beer-less-tears-dashboard-v2/static/css/main.1902e05a.chunk.css.map",
+    "static/js/2.ff5d23fd.chunk.js.LICENSE.txt": "/more-beer-less-tears-dashboard-v2/static/js/2.ff5d23fd.chunk.js.LICENSE.txt",
+    "static/media/bartenderDannie.png": "/more-beer-less-tears-dashboard-v2/static/media/bartenderDannie.539720ca.png",
+    "static/media/elhefe.png": "/more-beer-less-tears-dashboard-v2/static/media/elhefe.c8904cdd.png",
+    "static/media/fairytaleale.png": "/more-beer-less-tears-dashboard-v2/static/media/fairytaleale.acfe49fa.png",
+    "static/media/githop.png": "/more-beer-less-tears-dashboard-v2/static/media/githop.48cd6133.png",
+    "static/media/hollabacklager.png": "/more-beer-less-tears-dashboard-v2/static/media/hollabacklager.2c75a907.png",
+    "static/media/hoppilyeverafter.png": "/more-beer-less-tears-dashboard-v2/static/media/hoppilyeverafter.8241be53.png",
+    "static/media/mowintime.png": "/more-beer-less-tears-dashboard-v2/static/media/mowintime.f12221d1.png",
+    "static/media/orderReady.svg": "/more-beer-less-tears-dashboard-v2/static/media/orderReady.ead3cba1.svg",
+    "static/media/popMessage.gif": "/more-beer-less-tears-dashboard-v2/static/media/popMessage.e7eeff7a.gif",
+    "static/media/popMessage2.gif": "/more-beer-less-tears-dashboard-v2/static/media/popMessage2.dc846c84.gif",
+    "static/media/popMessage3.gif": "/more-beer-less-tears-dashboard-v2/static/media/popMessage3.dd663426.gif",
+    "static/media/row26.png": "/more-beer-less-tears-dashboard-v2/static/media/row26.1d7e34b3.png",
+    "static/media/ruinedchildhood.png": "/more-beer-less-tears-dashboard-v2/static/media/ruinedchildhood.09b39a83.png",
+    "static/media/sleighride.png": "/more-beer-less-tears-dashboard-v2/static/media/sleighride.4f5c54e0.png",
+    "static/media/steampunk.png": "/more-beer-less-tears-dashboard-v2/static/media/steampunk.f7447f93.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.02b0f6e6.js",
+    "static/js/2.ff5d23fd.chunk.js",
+    "static/css/main.1902e05a.chunk.css",
+    "static/js/main.3c4b633f.chunk.js"
+  ]
+}
