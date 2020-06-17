@@ -3,6 +3,8 @@ import "./popularbeer.scss";
 import Confetti from "./Confetti";
 import "../../sass/partials/layout/_main.scss";
 import Wrapper from "../Wrapper.js/Wrapper";
+import GetBeerLevelOnTap from "../../modules/GetBeerLevelOnTap";
+import UniqueBeerNamesOnTap from "../../modules/UniqueBeerNamesOnTap";
 
 export default React.memo(function MostPopularBeer(props) {
   const [orders, setOrders] = useState([]);
@@ -32,7 +34,7 @@ export default React.memo(function MostPopularBeer(props) {
     props.setamountSold(orderedBeers.length * 50);
 
     //gets unique names of beer
-    const beerNames = [...new Set(props.taps.map((beerName) => beerName.beer))];
+    const beerNames = UniqueBeerNamesOnTap(props.taps);
     // create object for each beer name
     let i = 0;
     const beers = beerNames.map((beerName) => {
@@ -42,20 +44,13 @@ export default React.memo(function MostPopularBeer(props) {
       );
 
       //get the level on tap for each beer smallest amount
-      const levelOnTap = props.taps
-        .filter((tapBeer) => tapBeer.beer === beerName)
-        .sort((a, b) => a.level - b.level);
-      // console.log(sameBeerNameRepeat);
+      const levelOnTap = GetBeerLevelOnTap(beerName, props.taps);
 
       return {
         id: i++,
         name: beerName,
         count: sameBeerNameRepeat.length,
-        levelOntap:
-          levelOnTap
-            .map((beerOnTap) => beerOnTap.level)
-            .reduce((beerLevelA, beerLevelB) => beerLevelA + beerLevelB, 0) /
-          levelOnTap.length,
+        levelOntap: levelOnTap,
       };
     });
 

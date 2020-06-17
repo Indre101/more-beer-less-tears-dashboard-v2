@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./BeerDisplay.scss";
 import BeerCard from "./BeerCard";
 import GetBeerTypes from "../../modules/GetBeerTypes";
+import GetBeerLevelOnTap from "../../modules/GetBeerLevelOnTap";
+import UniqueBeerNamesOnTap from "../../modules/UniqueBeerNamesOnTap";
 import Wrapper from "../Wrapper.js/Wrapper";
 
 export default function BeerDisplay(props) {
@@ -15,25 +17,20 @@ export default function BeerDisplay(props) {
 
   useEffect(() => {
     //gets unique names of beer
-    const beerNames = [...new Set(props.taps.map((beerName) => beerName.beer))];
+    const beerNames = UniqueBeerNamesOnTap(props.taps);
     let i = 0;
-
     const beers = beerNames.map((beerName) => {
       const beerType = beerTypes.find((type) => {
         return type.name === beerName;
       });
 
       //get the level on tap for each beer average
-      const levelOnTap = props.taps
-        .filter((tapBeer) => tapBeer.beer === beerName)
-        .map((tapBeer) => tapBeer.level);
-      const averageAmountOntapLeft =
-        levelOnTap.reduce((a, b) => a + b, 0) / levelOnTap.length;
+      const levelOnTap = GetBeerLevelOnTap(beerName, props.taps);
 
       return {
         id: i++,
         name: beerName,
-        levelOntap: averageAmountOntapLeft,
+        levelOntap: levelOnTap,
         beerType: (beerType && beerType.category) || "IPA",
       };
     });
