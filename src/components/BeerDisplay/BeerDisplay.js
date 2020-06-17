@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./BeerDisplay.scss";
 import BeerCard from "./BeerCard";
 import GetBeerTypes from "../../modules/GetBeerTypes";
+import Wrapper from "../Wrapper.js/Wrapper";
 
 export default function BeerDisplay(props) {
   const [beersList, setbeersList] = useState([]);
@@ -44,11 +45,10 @@ export default function BeerDisplay(props) {
     <BeerCard key={beer.id} beer={beer} />
   ));
   return (
-    <div className="wrapper ">
+    <Wrapper>
       <h2>ON THE MENU TONIGHT</h2>
       <h3>Beer left on the tap</h3>
-
       <div className="wrapperBeersStatus">{beerCards}</div>
-    </div>
+    </Wrapper>
   );
 }

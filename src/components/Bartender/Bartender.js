@@ -1,6 +1,7 @@
 import React from "react";
 import "./bartender.scss";
 import "../../sass/partials/layout/_main.scss";
+import Wrapper from "../Wrapper.js/Wrapper";
 
 function Atwork(props) {
   let result = props.bartenders.map((bartender) => (
@@ -25,11 +26,11 @@ function Atwork(props) {
     </div>
   ));
   return (
-    <div className="wrapper">
+    <Wrapper>
       <h2>AT THE BAR FOR YOU</h2>
       <h3>Staff working today</h3>
       <div id="bartenders">{result}</div>
-    </div>
+    </Wrapper>
   );
 }
 

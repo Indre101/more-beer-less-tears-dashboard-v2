@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import gsap from "gsap";
 import CreateElements from "../../modules/CreateElements";
 import HappyAnimation from "./HappyAnimation";
-
+import Wrapper from "../Wrapper.js/Wrapper";
 import "./hapyness.scss";
 export default function HappynessBar(props) {
   const [bubbles, setbubbles] = useState([]);
@@ -66,7 +66,7 @@ export default function HappynessBar(props) {
   const textAnimation = (amountOfBeer) =>
     props.amountSold > amountOfBeer && "happyTextAnimation";
   return (
-    <div className="wrapper happymeterContainer">
+    <Wrapper customClass={"happymeterContainer"}>
       <h2>HAPPINESS-BAR-O-METER</h2>
       <h3>Beer consumption in total</h3>{" "}
       <div className="wrapperInside">
@@ -99,6 +99,6 @@ export default function HappynessBar(props) {
           cl{" "}
         </h3>
       </div>
-    </div>
+    </Wrapper>
   );
 }

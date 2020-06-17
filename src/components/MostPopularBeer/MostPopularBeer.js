@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./popularbeer.scss";
 import Confetti from "./Confetti";
 import "../../sass/partials/layout/_main.scss";
+import Wrapper from "../Wrapper.js/Wrapper";
 
 export default React.memo(function MostPopularBeer(props) {
   const [orders, setOrders] = useState([]);
@@ -86,7 +87,7 @@ export default React.memo(function MostPopularBeer(props) {
   ));
 
   return (
-    <div className="wrapper">
+    <Wrapper>
       <h2>YOUR TOP PICKS</h2>
       <h3>Most popular beer tonight</h3>
       <div className="wrapperMostPopularBeer">
@@ -105,6 +106,6 @@ export default React.memo(function MostPopularBeer(props) {
           </div>
         </div>
       </div>
-    </div>
+    </Wrapper>
   );
 });

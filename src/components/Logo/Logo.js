@@ -2,6 +2,8 @@
 import React, { useEffect, useRef } from "react";
 import animationData from "../../assets/lottifiles/data08.json";
 import lottie from "lottie-web";
+import Wrapper from "../Wrapper.js/Wrapper";
+
 export default React.memo(function Logoanimation() {
   const container = useRef();
 
@@ -24,8 +26,8 @@ export default React.memo(function Logoanimation() {
   }, []);
 
   return (
-    <div>
-      <div className="wrapper logo" ref={container}></div>
-    </div>
+    <Wrapper>
+      <div className="logo" ref={container}></div>
+    </Wrapper>
   );
 });

@@ -10,7 +10,7 @@ export default React.memo(function HappyAnimation(props) {
 
   useEffect(() => {
     if (
-      props.amountSold > props.maxBeakerHeight &&
+      props.amountSold > props.maxBeakerHeight * 10 &&
       displayValue === "none" &&
       !StopShowing
     ) {

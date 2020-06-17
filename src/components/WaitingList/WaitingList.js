@@ -1,5 +1,6 @@
 import React from "react";
 import "./waitinglist.scss";
+import Wrapper from "../Wrapper.js/Wrapper";
 
 let img = "";
 let randomImg = 0;
@@ -15,7 +16,7 @@ export default function WaitingList(props) {
     //if there are no orders in the queue
     randomImg = Math.floor(Math.random() * 3); //randomly shows one of the three images when there're no orders in the queue
     return (
-      <div className="wrapper">
+      <Wrapper>
         <h2>BEER IS READY!</h2>
         <h3>Customers served</h3>{" "}
         <div className="wrapperCustomer">
@@ -54,12 +55,12 @@ export default function WaitingList(props) {
             </div>
           </div>
         </div>
-      </div>
+      </Wrapper>
     );
   } else {
     img = ImgArray2[randomImg]; //show one, randomly chosen image from ImgArray2
     return (
-      <div className="wrapper">
+      <Wrapper>
         <h2>BEER IS READY!</h2>
         <h3>Customers served</h3>{" "}
         <div className="wrapperCustomer">
@@ -95,7 +96,7 @@ export default function WaitingList(props) {
             </div>
           </div>
         </div>
-      </div>
+      </Wrapper>
     );
   }
 }
