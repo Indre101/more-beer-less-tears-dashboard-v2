@@ -65,7 +65,7 @@ export default function WaitingList(props) {
         <h3>Customers served</h3>{" "}
         <div className="wrapperCustomer">
           {" "}
-          <h3>Ordering number</h3>
+          <h3>Order number</h3>
           <div className="container2 border2">
             {props.currentServing.map(({ id }) => (
               <div className="serving " style={{ color: "" }} key={id}>
@@ -86,7 +86,7 @@ export default function WaitingList(props) {
           <h3>Customers waiting</h3>
           <div className="wrapperCustomer">
             {" "}
-            <h3>Ordering number</h3>
+            <h3>Order number</h3>
             <div className="container2 border1">
               {props.currentQueue.map(({ id, startTime }) => (
                 <div className="queue" style={{ color: "" }} key={id}>

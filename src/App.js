@@ -50,13 +50,12 @@ function App() {
             <Logoanimation />
             <Announcement />
           </div>
-          <div className="item mosPopularBeerItem">
-            <MostPopularBeer
-              currentQueue={queue}
-              taps={taps}
-              setamountSold={setamountSold}
-            />
-          </div>
+          <MostPopularBeer
+            currentQueue={queue}
+            taps={taps}
+            setamountSold={setamountSold}
+          />
+
           <div className="item happynessItem">
             <HappynessBar amountSold={amountSold} />
           </div>

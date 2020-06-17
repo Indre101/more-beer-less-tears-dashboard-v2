@@ -229,18 +229,4 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  h1 {
-    margin-bottom: 350px;
-  }
-
-  .animationContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.beerMeterFull div svg {
-  position: absolute;
-  width: 30% !important;
 }
