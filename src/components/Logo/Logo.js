@@ -14,15 +14,14 @@ export default React.memo(function Logoanimation() {
       loop: false,
       autoplay: false,
       animationData: animationData,
-      onComplete: () => console.log("hi"),
     });
     animation.play();
-    animation.addEventListener("complete", () =>
+    animation.addEventListener("complete", () => {
       setTimeout(() => {
         animation.stop();
         animation.play();
-      }, 10000)
-    );
+      }, 10000);
+    });
   }, []);
 
   return (
