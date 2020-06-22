@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1364bbcc4bd01410561053d67b9e2804",
+    "revision": "425d16e16390121a7e90e54653cd307a",
     "url": "/more-beer-less-tears-dashboard-v2/index.html"
   },
   {
